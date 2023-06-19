@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ExpensesActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/mBeditDate"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="DATE"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <ListView
+        android:id="@+id/mList"
+        android:layout_width="409dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/mBtnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="317dp"
+        android:text="Sum" />
+
+
+</RelativeLayout >
