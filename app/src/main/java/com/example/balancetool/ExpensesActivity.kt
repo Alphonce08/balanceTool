@@ -14,9 +14,6 @@ import com.google.firebase.storage.StorageReference
 class ExpensesActivity : AppCompatActivity() {
     lateinit var date:TextView
     lateinit var Elist:ListView
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_expenses)
         class ExpensesActivity : AppCompatActivity() {
             lateinit var dateinput: TextView
             lateinit var listtable: ListView
@@ -80,4 +77,3 @@ class ExpensesActivity : AppCompatActivity() {
 
         }
     }
-}
