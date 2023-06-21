@@ -12,23 +12,20 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 
 class ExpensesActivity : AppCompatActivity() {
-    lateinit var date:TextView
-    lateinit var Elist:ListView
-        class ExpensesActivity : AppCompatActivity() {
-            lateinit var dateinput: TextView
-            lateinit var listtable: ListView
-            lateinit var sumtotal: Button
-            lateinit var progress: ProgressDialog
-            lateinit var filepath: Uri
-            lateinit var firebaseStore: FirebaseStorage
-            lateinit var storageReference: StorageReference
-            lateinit var mAuth: FirebaseAuth
+    lateinit var dateinput: TextView
+    lateinit var listtable: ListView
+    lateinit var sumtotal: Button
+    lateinit var progress: ProgressDialog
+    lateinit var filepath: Uri
+    lateinit var firebaseStore: FirebaseStorage
+    lateinit var storageReference: StorageReference
+    lateinit var mAuth: FirebaseAuth
             override fun onCreate(savedInstanceState: Bundle?) {
                 super.onCreate(savedInstanceState)
                 setContentView(R.layout.activity_expenses)
                 dateinput = findViewById(R.id.mBeditDate)
                 listtable = findViewById(R.id.mListExpenses)
-                sumtotal = findViewById(R.id.mBtnSum)
+                sumtotal = findViewById(R.id.BtnTotalExpenses)
                 progress = ProgressDialog(this)
                 firebaseStore = FirebaseStorage.getInstance()
                 storageReference = firebaseStore.getReference()
@@ -73,7 +70,5 @@ class ExpensesActivity : AppCompatActivity() {
                     println("Sum: $sum")
                 }
             }
+   }
 
-
-        }
-    }

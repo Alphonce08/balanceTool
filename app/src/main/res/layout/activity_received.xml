@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExpensesActivity"
+    tools:context=".ReceivedActivity"
     android:background="@drawable/index">
-
 
     <EditText
         android:id="@+id/mBeditDate"
@@ -18,35 +17,27 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="DATE"
-        android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/mListExpenses"
-        app:layout_constraintStart_toStartOf="@+id/mListExpenses"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="68dp" />
 
     <ListView
-        android:id="@+id/mListExpenses"
-        android:layout_width="300dp"
-        android:layout_height="460dp"
+        android:layout_width="409dp"
+        android:layout_height="500dp"
+        tools:layout_editor_absoluteX="1dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="90dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mBeditDate" />
+        tools:layout_editor_absoluteY="114dp" />
 
     <Button
-        android:id="@+id/BtnTotalExpenses"
+        android:id="@+id/BtnTotalReceived"
         android:layout_width="200dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="108dp"
-        android:layout_marginBottom="69dp"
-        android:text="Total Expenses"
+        android:layout_marginStart="97dp"
+        android:layout_marginBottom="39dp"
+        android:text="Total Received"
         android:textSize="20sp"
         android:textStyle="bold"
         />
